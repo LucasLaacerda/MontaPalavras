@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="276dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.964">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPalavraInicial"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:background="@android:color/background_light"
+            android:cursorVisible="true"
+            android:hint="Digite aqui..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="352dp"
+        android:layout_height="127dp"
+        android:background="#00FFFFFF"
+        android:text="Digite as letras disponíveis nesta jogada"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="96dp"
+        android:layout_height="59dp"
+        android:onClick="montaPalavra"
+        android:text="OK"
+        android:textAllCaps="true"
+        android:textColor="#537CBF"
+        android:textSize="18sp"
+        app:backgroundTint="@color/white"
+        app:iconTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.978"
+        app:rippleColor="#00FFFFFF"
+        app:strokeColor="#00FFFFFF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
